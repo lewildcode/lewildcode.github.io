@@ -1,0 +1,26 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>LeWildCode</title>
+ <link href="http://www.lewildcode.com/atom.xml" rel="self"/>
+ <link href="http://www.lewildcode.com/"/>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>http://www.lewildcode.com</id>
+ <author>
+   <name>LeWildCode Team</name>
+ </author>
+ 
+ {% for post in site.posts %}
+ <entry>
+   <title>{{ post.title }}</title>
+   <link href="http://www.lewildcode.com{{ post.url }}"/>
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <id>http://www.lewildcode.com{{ post.id }}</id>
+   <content type="html">{{ post.content | xml_escape }}</content>
+ </entry>
+ {% endfor %}
+ 
+</feed>
