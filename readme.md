@@ -24,14 +24,10 @@ Checkout the project, cd into it and run a local server for testing:
     jekyll --server
 
 The static pages will be generated and a http server is started on port 4000, thus point your browser to http://localhost:4000 to click through the site.
-Please note that you need install pygments if you want the syntax highlighting to work on your machine, otherwise it will be just plain, unformated text.
+Please note that you'll need to install [pygments](http://pygments.org/) if you want syntax highlighting to work on your machine, otherwise it'll be just plain, unformated text.
 
 ### Install depenencies
 
     gem update --system
     gem install jekyll
     gem install rdiscount
-
-## Todo
-
-- Better handling of author metadata
