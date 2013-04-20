@@ -11,10 +11,12 @@
 body {
   position: relative;
   padding-top: 80px;
+  background-image: url(../img/bg.jpg);
   background-color: #fff;
   /*background-image: url(http://subtlepatterns.com/patterns/rockywall.png);*/
   background-repeat: repeat-x;
   background-position: 0 40px;
+  background-width: 100%;
 }
 
 /* Tweak navbar brand link to be super sleek
@@ -244,6 +246,10 @@ hr.soften {
 	-webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
+}
+
+.post-author {
+    margin-top:35px;
 }
 
 /* Marketing section of Overview

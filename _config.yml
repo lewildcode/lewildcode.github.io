@@ -2,3 +2,17 @@ auto: true
 markdown: rdiscount
 pygments: true
 permalink: /blog/:title
+author_ids:
+    - janbehrens
+    - timoziemann
+authors:
+    janbehrens:
+        display_name: Jan Behrens
+        display_in_team: true
+        link: http://www.janbehrens.com
+        gravatar_hash: 3725738e47b6729fabbf3e1a53522cd9
+    timoziemann:
+        display_name: Timo Ziemann
+        display_in_team: true
+        link: http://www.timoziemann.de
+        gravatar_hash: 48b3eacacaf3283f5483abf3d1adbd63

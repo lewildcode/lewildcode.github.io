@@ -25,8 +25,12 @@
     <h2>Who?</h2>
     
     <ul class="clearfix unstyled">
-        <li class="pull-left"><a href="http://www.janbehrens.com" title="Jan Behrens"><img src="http://www.gravatar.com/avatar/3725738e47b6729fabbf3e1a53522cd9" /></a></li>
-        <li class="pull-left"><a href="http://www.timoziemann.de/" title="Timo Ziemann"><img src="http://www.gravatar.com/avatar/48b3eacacaf3283f5483abf3d1adbd63" /></a></li>
+        {% for author_id in site.author_ids %}
+            {% assign author = site.authors[author_id] %}
+            {% if author.display_in_team %}
+                <li class="pull-left"><a href="{{ author.link }}" title="{{ author.display_name }}"><img src="http://www.gravatar.com/avatar/{{ author.gravatar_hash }}" title="{{ author.display_name }}" data-toggle="tooltip" /></a></li>
+            {% endif %}
+        {% endfor %}
     </ul>
     
     <h2>ZF2 Modules</h2>

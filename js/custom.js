@@ -21,13 +21,6 @@ jQuery(document).ready(function() {
 		};
 	}	
 	
-	$('#ghw').githubWidget({
-			'username': 'lewildcode',
-			'displayActions': false,
-			'firstCount': 10,
-			'displayHeader': false,
-			'displayLastCommit': false,
-			'displayAccountInformations': false,
-			'displayLanguage': false
-		});
+	$('*[data-toggle="tooltip"]').tooltip({placement: 'bottom'});
+
 });

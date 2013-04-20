@@ -1,15 +1,14 @@
 ---
 layout: post
 title: Welcome to our blog
-author: Jan Behrens
-authorlink: http://www.janbehrens.com
+author: janbehrens
 category: Coding
 tags: info
 year: 2013
 month: 4
 day: 19
 published: true
-summary: A welcome post for our blog
+summary: Finally, we're online! After some experimenting with setting up a custom blog using ZF2, i've decided to use jekyll and Github pages instead.
 image: post_one.png
 ---
 
