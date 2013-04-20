@@ -4,7 +4,9 @@
         <p><h1>{{ page.title }}</h1></p>
     </div>
     <div class="span2 column">
-        <img class="post-author pull-right" title="{{ author.display_name }}" data-toggle="tooltip" src="http://www.gravatar.com/avatar/{{ author.gravatar_hash }}" />
+        <a class="pull-right" href="{{ author.link }}">
+            <img class="post-author" title="{{ author.display_name }}" data-toggle="tooltip" src="http://www.gravatar.com/avatar/{{ author.gravatar_hash }}" />
+        </a>
     </div>
 </div>
 <div class="row">
