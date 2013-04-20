@@ -11,9 +11,11 @@
 </div>
 <div class="row">
     <div class="span8 column">
-        <h5><a href="{{ author.link }}">{{ author.display_name }}</a> at <strong>{{ page.date | date: "%B %e, %Y" }} <small>. {{ page.category }} . <a href="http://www.lewildcode.com{{ page.url }}#disqus_thread" data-disqus-identifier="{{ page.url }}">Comments</a></small></strong>
-        <br/><small>Tags: {% for tag in page.tags %} <a href="/tags/{{ tag }}" title="View posts tagged with &quot;{{ tag }}&quot;"><span class="label label-info">{{ tag }}</span></a>  {% if forloop.last != true %} {% endif %} {% endfor %} </small><br/><br/>
-        <a href="https://twitter.com/share" class="twitter-share-button" data-via="lewildcode">Tweet</a> <g:plusone size="medium"></g:plusone></h5>
+        <a href="{{ author.link }}">{{ author.display_name }}</a>
+        | <i class="icon-calendar"></i> <strong>{{ page.date | date: "%B %e, %Y" }}
+        | <i class="icon-comment"></i> <small><a href="http://www.lewildcode.com{{ page.url }}#disqus_thread" data-disqus-identifier="{{ page.url }}">Comments</a></small></strong>
+        <br/><i class="icon-tags"></i> <small>{% for tag in page.tags %} <a href="/tags/{{ tag }}" title="View posts tagged with &quot;{{ tag }}&quot;"><span class="label label-info">{{ tag }}</span></a>  {% if forloop.last != true %} {% endif %} {% endfor %} </small><br/><br/>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="lewildcode">Tweet</a> <g:plusone size="medium"></g:plusone>
     </div>
     <div class="span2 column">
         <p class="pull-right">{% if page.previous.url %} <a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}"><i class="icon-chevron-left"></i></a> 	{% endif %}   {% if page.next.url %} 	<a href="{{page.next.url}}" title="Next Post: {{page.next.title}}"><i class="icon-chevron-right"></i></a> {% endif %} </p>
