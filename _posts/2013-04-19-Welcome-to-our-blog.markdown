@@ -2,7 +2,7 @@
 layout: post
 title: Welcome to our blog
 author: janbehrens
-category: Coding
+category: info
 tags: info
 year: 2013
 month: 4
