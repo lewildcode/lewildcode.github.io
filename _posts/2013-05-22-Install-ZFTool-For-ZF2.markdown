@@ -22,7 +22,7 @@ on after installing the ZFTool module via composer (or similar). To set everythi
 up, you'll have to:
 
 ### First: modify your composer.json file to look like this:
-'''js
+{% highlight js %}
 {
     "require": {
         "php": ">=5.3.3",
@@ -30,10 +30,10 @@ up, you'll have to:
         "zendframework/zftool"          : "dev-master"
     }
 }
-'''
+{% endhighlight %}
 
 ### Second: add it to your application.config.php "modules" section:
-'''php
+{% highlight php %}
 return array(
     'modules' => array(
         'Application',
@@ -41,7 +41,7 @@ return array(
         // ...
     )
 );
-'''
+{% endhighlight %}
 
 Now you may use your command line like `php public/index.php --version` or any
 other command available via ZFTool.
