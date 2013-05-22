@@ -17,7 +17,11 @@ the [ZFTool module](https://github.com/zendframework/ZFTool/blob/master/README.m
 the other day. I've added the repo to my composer.json file and tried to call
 the zf.php from the command line. But it seems it didn't find my actual modules.
 
-Currently, there are some steps missing in the README file, how you have to go
+#### Some error messages I ran into:
+- No modules installed. Are you in the root folder of a ZF2 application?
+- Reason for failure: Invalid arguments or no arguments provided
+
+Currently, there are some steps missing in their README file, how you have to go
 on after installing the ZFTool module via composer (or similar). To set everything
 up, you'll have to:
 
@@ -32,7 +36,7 @@ up, you'll have to:
 }
 {% endhighlight %}
 
-### Second: add it to your application.config.php "modules" section:
+### Second: add it to your `application.config.php` "modules" section:
 {% highlight php %}
 return array(
     'modules' => array(
@@ -44,11 +48,12 @@ return array(
 {% endhighlight %}
 
 Now you may use your command line like `php public/index.php --version` or any
-other command available via ZFTool.
+other command available via ZFTool!
 
 There is one more thing: if you are using the `module_map_cache_enabled` and
 `config_cache_enabled` settings (set them to active) you possibly have a cached
-classmap. So you'll possibly have to clear the cache folder :-)
+classmap. So you'll have to clear your cache folder then :-)
 
 Stay tuned,
+
 Timo
