@@ -7,7 +7,7 @@ tags: zf2
 year: 2013
 month: 5
 day: 22
-published: false
+published: true
 summary: While playing around with the ZFTool module for the Zend Framework 2, I noticed some issues with the CLI setup.
 image: post_two.png
 ---
